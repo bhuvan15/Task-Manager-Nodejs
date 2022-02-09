@@ -70,7 +70,7 @@ app.get('/delete_task', function(req, res) {
 
 
 
-
+/* Firing up out server */
 app.listen(PORT, function(err) {
     if(err) {
         console.log(`${err} on port ${PORT}`);

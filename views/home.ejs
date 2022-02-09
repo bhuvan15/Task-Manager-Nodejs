@@ -21,7 +21,7 @@
         </div>
         <!-- Input tasks -->
         <form action="/add_task" method="post">
-
+            <!-- Task text -->
             <div class="description">
                 <div class="des_text text">
                     Description
@@ -29,7 +29,11 @@
                 <input type="text" placeholder="What do you want to do?" id="description_input" name="task"
                     required />
             </div>
+
+            <!-- Options -->
             <div class="options">
+
+                <!-- Category -->
                 <div class="category">
                     <div class="cat_text text">
                         Select Category
@@ -42,6 +46,8 @@
                         <option value="Cleaning">Cleaning</option>
                     </select>
                 </div>
+
+                <!-- Due date -->
                 <div class="date">
                     <div class="date_text text">
                         Due Date
@@ -49,7 +55,7 @@
                     <input type="date" name="date" id="date" required />
                 </div>
             </div>
-
+                <!-- Add task button -->
             <div class="buttons">
                 <div class="icon">
                     <i class="fa-solid fa-plus"></i>
@@ -61,6 +67,8 @@
 
         <!-- Tasks -->
         <div class="tasks">
+
+            <!-- individual tasks -->
             <% for(let i of tasks) {%>
             <div class="task">
                 <div class="left">
@@ -77,11 +85,13 @@
                         <%= i.date %>
                     </div>
                 </div>
-
+                <!-- Category display -->
                 <div class="right">
                     <div class="category_info">
                         <%= i.category %>
                     </div>
+
+                    <!-- Display button -->
                     <div class="deleteBtn">
                        <a href="/delete_task/?id=<%= i.id%>"><i class="fa-solid fa-trash-can"></i></a>
                     </div>
