@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a7a5a5;
+    font-family: "Rotobo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 40px;
+    min-height: 90vh;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid rgb(153, 152, 152);
+    border-radius: 10px;
+    box-shadow: 4px 4px 13px 0px rgba(90, 90, 90, 0.75);
+-webkit-box-shadow: 4px 4px 13px 0px rgba(121, 118, 118, 0.75);
+-moz-box-shadow: 4px 4px 13px 0px rgba(114, 110, 110, 0.75);
+}
+
+.heading {
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid rgba(112, 110, 110, 0.5);
+}
+.heading > h1 {
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+}
+
+/* Input form */
+
+form {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Task info */
+.description {
+    width: 100%;
+    flex: 1;
+    border-bottom: 1px solid rgba(112, 110, 110, 0.5);
+    position: relative;
+}
+
+/* Each form input label */
+.text {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Task input text */
+#description_input {
+    width: 100%;
+    padding: 10px 20px;
+    height: 100%;
+    font-size: 24px;
+    border: none;
+}
+#description_input:focus {
+    outline: none;
+    background-color: #f3f3f3;
+    border: none;
+}
+
+/* Task options */
+.options {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 0.7;
+    border-bottom: 1px solid rgba(112, 110, 110, 0.5);
+}
+.category {
+    height: 100%;
+    flex: 1;
+    position: relative;
+}
+
+#category {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+#category:focus {
+    background-color: #f3f3f3;
+    outline: none;
+}
+.cat_text {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.date {
+    height: 100%;
+    flex: 1;
+    position: relative;
+}
+
+#date {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: none;
+}
+#date:focus {
+    outline: none;
+    background-color: #f3f3f3;
+}
+
+.buttons {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    border-bottom: 1px solid rgba(112, 110, 110, 0.5);
+    margin-bottom: 10px;
+    
+}
+.buttons i {
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    font-size: 24px;
+    cursor: pointer;
+}
+.buttons > input {
+    height: 80%;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: rgb(7, 192, 7);
+    margin-top: 5px;
+    border-radius: 7px;
+    
+    
+}
+
+/* Tasks */
+
+.tasks {
+    width: 100%;
+    height: 100%;
+}
+
+.task {
+    margin-top: 7px;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    padding: 20px 30px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(112, 110, 110, 0.5);
+
+}
+
+.left {
+    flex: 0.8;
+}
+.right {
+    flex: 0.2;
+}
+
+/* Task data */
+.task_info {
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.task_info i {
+    color: rgb(7, 192, 7);
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+/* Date data */
+.date_display {
+    font-size: 17px;
+    margin-top: 5px;
+    color: rgb(155, 37, 126);
+}
+
+.date_display i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.right .category_info {
+    height: 50px;
+    width: 125px;
+    background-color: rgb(18, 27, 114);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+
+.right i{
+    cursor: pointer;
+    color: red;
+    font-size: 26px;
+}
